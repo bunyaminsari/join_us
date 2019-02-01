@@ -4,7 +4,7 @@ var faker = require('faker');
 var bodyParser = require('body-parser');
 
 var app = express();
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 var connection  = mysql.createConnection({
     host: 'localhost',
